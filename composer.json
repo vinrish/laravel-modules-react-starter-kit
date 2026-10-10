@@ -13,7 +13,8 @@
         "inertiajs/inertia-laravel": "^3.5.1",
         "laravel/framework": "^13.35",
         "laravel/tinker": "^3.0.2",
-        "laravel/wayfinder": "^0.1.21"
+        "laravel/wayfinder": "^0.1.21",
+        "nwidart/laravel-modules": "^13.0"
     },
     "require-dev": {
         "driftingly/rector-laravel": "^2.6.2",
@@ -45,7 +46,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "Modules\\Auth\\": "Modules/Auth/app/"
         }
     },
     "scripts": {
@@ -113,7 +115,8 @@
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "wikimedia/composer-merge-plugin": true
         }
     },
     "minimum-stability": "stable"
