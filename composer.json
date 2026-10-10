@@ -9,24 +9,32 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^8.3",
-        "inertiajs/inertia-laravel": "^3.0",
-        "laravel/framework": "^13.17",
-        "laravel/tinker": "^3.0",
-        "laravel/wayfinder": "^0.1.14"
+        "php": "^8.4 | ^8.5",
+        "inertiajs/inertia-laravel": "^3.5.1",
+        "laravel/framework": "^13.35",
+        "laravel/tinker": "^3.0.2",
+        "laravel/wayfinder": "^0.1.21"
     },
     "require-dev": {
-        "fakerphp/faker": "^1.24",
-        "larastan/larastan": "^3.9",
-        "laravel/boost": "^2.2",
-        "laravel/pail": "^1.2.5",
-        "laravel/pao": "^1.0.6",
-        "laravel/pint": "^1.27",
-        "laravel/sail": "^1.53",
-        "mockery/mockery": "^1.6",
-        "nunomaduro/collision": "^8.9.3",
-        "pestphp/pest": "^5.3",
-        "pestphp/pest-plugin-laravel": "^5.0"
+        "driftingly/rector-laravel": "^2.6.2",
+        "fakerphp/faker": "^1.24.1",
+        "larastan/larastan": "^3.13",
+        "laravel/boost": "^2.10.3",
+        "laravel/pail": "^1.2.7",
+        "laravel/pao": "^1.1.5",
+        "laravel/pint": "^1.32.1",
+        "laravel/sail": "^1.68",
+        "mockery/mockery": "^1.6.15",
+        "nunomaduro/collision": "^8.9.5",
+        "pestphp/pest": "^5.3.1",
+        "pestphp/pest-plugin-agent": "^5.0",
+        "pestphp/pest-plugin-browser": "^5.1.2",
+        "pestphp/pest-plugin-laravel": "^5.0.1",
+        "pestphp/pest-plugin-phpstan": "^5.2.2",
+        "pestphp/pest-plugin-rector": "^5.0.6",
+        "pestphp/pest-plugin-type-coverage": "^5.0.3",
+        "rector/rector": "^2.7.0",
+        "roave/security-advisories": "dev-latest"
     },
     "autoload": {
         "psr-4": {
@@ -46,8 +54,8 @@
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             "@php artisan key:generate",
             "@php artisan migrate --force",
-            "npm install",
-            "npm run build"
+            "pnpm install",
+            "pnpm build"
         ],
         "dev": [
             "Composer\\Config::disableProcessTimeout",
@@ -61,8 +69,8 @@
         ],
         "ci:check": [
             "Composer\\Config::disableProcessTimeout",
-            "npm run check",
-            "npm run types:check",
+            "pnpm check",
+            "pnpm types:check",
             "@test"
         ],
         "types:check": [
