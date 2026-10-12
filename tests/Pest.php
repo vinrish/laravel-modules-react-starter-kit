@@ -28,7 +28,7 @@ pest()->extend(TestCase::class)
         __DIR__.'/../Modules/Auth/tests',
     );
 
-pest()->tia()->defaultBranch('main');
+pest()->tia()->defaultBranch('master');
 
 expect()->extend('toBeOne', fn () => $this->toBe(1));
 
