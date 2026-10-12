@@ -26,6 +26,7 @@ pest()->extend(TestCase::class)
     ->use(RefreshDatabase::class)
     ->in(
         __DIR__.'/../Modules/Auth/tests',
+        __DIR__.'/../Modules/Role/tests',
     );
 
 pest()->tia()->defaultBranch('master');

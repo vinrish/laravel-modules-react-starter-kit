@@ -1,0 +1,46 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\Roles\Tests\Unit;
+
+use Modules\Role\Database\Seeders\RolesAndPermissionsSeeder;
+use Modules\Role\Enums\PermissionName;
+use Modules\Role\Enums\RoleName;
+use Spatie\Permission\Models\Permission;
+use Spatie\Permission\Models\Role;
+
+it('contains expected role names in enum', function (): void {
+    $values = RoleName::values();
+
+    expect($values)->toContain('admin', 'teacher', 'student', 'parent');
+});
+
+it('contains expected permission names in enum', function (): void {
+    $values = PermissionName::values();
+
+    expect($values)->toContain(
+        'manage users',
+        'manage roles',
+        'view reports',
+        'manage assessments',
+        'submit assessments',
+        'view assessments',
+        'view child progress'
+    );
+});
+
+it('seeds default roles and permissions correctly', function (): void {
+    $this->seed(RolesAndPermissionsSeeder::class);
+
+    foreach (RoleName::values() as $role) {
+        expect(Role::query()->where('name', $role)->exists())->toBeTrue();
+    }
+
+    foreach (PermissionName::values() as $permission) {
+        expect(Permission::query()->where('name', $permission)->exists())->toBeTrue();
+    }
+
+    $adminRole = Role::findByName(RoleName::Admin->value, 'web');
+    expect($adminRole->permissions)->toHaveSameSize(PermissionName::values());
+});
