@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Modules\Roles\Actions;
+namespace Modules\Role\Actions;
 
 use Spatie\Permission\Models\Role;
 
-final class DeleteRoleAction
+final readonly class DeleteRoleAction
 {
     /**
      * Delete a role.

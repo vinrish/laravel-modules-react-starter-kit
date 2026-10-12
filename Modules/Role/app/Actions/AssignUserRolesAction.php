@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Modules\Roles\Actions;
+namespace Modules\Role\Actions;
 
 use Modules\Auth\Models\User;
-use Modules\Roles\DataTransferObjects\AssignRoleData;
+use Modules\Role\DataTransferObjects\AssignRoleData;
 
-final class AssignUserRolesAction
+final readonly class AssignUserRolesAction
 {
     /**
      * Assign / sync roles to a user.

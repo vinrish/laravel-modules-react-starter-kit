@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Modules\Roles\Actions;
+namespace Modules\Role\Actions;
 
-use Modules\Roles\DataTransferObjects\RoleData;
+use Modules\Role\DataTransferObjects\RoleData;
 use Spatie\Permission\Models\Role;
 
-final class CreateRoleAction
+final readonly class CreateRoleAction
 {
     /**
      * Create a new role and synchronize its permissions.

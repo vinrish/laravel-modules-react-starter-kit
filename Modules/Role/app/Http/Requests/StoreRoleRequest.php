@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Roles\Http\Requests;
+namespace Modules\Role\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Modules\Roles\Actions;
+namespace Modules\Role\Actions;
 
-use Modules\Roles\DataTransferObjects\RoleData;
+use Modules\Role\DataTransferObjects\RoleData;
 use Spatie\Permission\Models\Role;
 
-final class UpdateRoleAction
+final readonly class UpdateRoleAction
 {
     /**
      * Update a role and synchronize its permissions.

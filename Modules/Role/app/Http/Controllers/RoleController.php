@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace Modules\Roles\Http\Controllers;
+namespace Modules\Role\Http\Controllers;
 
 use Illuminate\Http\RedirectResponse;
 use Inertia\Inertia;
 use Inertia\Response;
-use Modules\Roles\Actions\CreateRoleAction;
-use Modules\Roles\Actions\DeleteRoleAction;
-use Modules\Roles\Actions\UpdateRoleAction;
-use Modules\Roles\DataTransferObjects\RoleData;
-use Modules\Roles\Http\Requests\StoreRoleRequest;
-use Modules\Roles\Http\Requests\UpdateRoleRequest;
-use Modules\Roles\Services\PermissionService;
-use Modules\Roles\Services\RoleService;
+use Modules\Role\Actions\CreateRoleAction;
+use Modules\Role\Actions\DeleteRoleAction;
+use Modules\Role\Actions\UpdateRoleAction;
+use Modules\Role\DataTransferObjects\RoleData;
+use Modules\Role\Http\Requests\StoreRoleRequest;
+use Modules\Role\Http\Requests\UpdateRoleRequest;
+use Modules\Role\Services\PermissionService;
+use Modules\Role\Services\RoleService;
 use Spatie\Permission\Models\Role;
 
 final readonly class RoleController

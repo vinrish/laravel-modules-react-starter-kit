@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Roles\DataTransferObjects;
+namespace Modules\Role\DataTransferObjects;
 
 use Illuminate\Foundation\Http\FormRequest;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Roles\Services;
+namespace Modules\Role\Services;
 
 use Illuminate\Database\Eloquent\Collection;
 use Spatie\Permission\Models\Permission;

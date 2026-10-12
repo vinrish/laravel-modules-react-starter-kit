@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Modules\Roles\Database\Seeders;
+namespace Modules\Role\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\App;
-use Modules\Roles\Enums\PermissionName;
-use Modules\Roles\Enums\RoleName;
+use Modules\Role\Enums\PermissionName;
+use Modules\Role\Enums\RoleName;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\PermissionRegistrar;

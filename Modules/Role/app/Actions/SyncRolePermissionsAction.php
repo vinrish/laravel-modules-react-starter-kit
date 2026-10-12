@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Modules\Roles\Actions;
+namespace Modules\Role\Actions;
 
 use Spatie\Permission\Models\Role;
 
-final class SyncRolePermissionsAction
+final readonly class SyncRolePermissionsAction
 {
     /**
      * Synchronize permissions for a given role.

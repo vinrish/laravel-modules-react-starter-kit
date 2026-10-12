@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Roles\Enums;
+namespace Modules\Role\Enums;
 
 enum PermissionName: string
 {

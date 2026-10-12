@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Roles\Providers;
+namespace Modules\Role\Providers;
 
 use Illuminate\Routing\Router;
 use Nwidart\Modules\Support\ModuleServiceProvider;
@@ -10,17 +10,17 @@ use Spatie\Permission\Middleware\PermissionMiddleware;
 use Spatie\Permission\Middleware\RoleMiddleware;
 use Spatie\Permission\Middleware\RoleOrPermissionMiddleware;
 
-final class RolesServiceProvider extends ModuleServiceProvider
+final class RoleServiceProvider extends ModuleServiceProvider
 {
     /**
      * The name of the module.
      */
-    protected string $name = 'Roles';
+    protected string $name = 'Role';
 
     /**
      * The lowercase version of the module name.
      */
-    protected string $nameLower = 'roles';
+    protected string $nameLower = 'role';
 
     /**
      * Provider classes to register.

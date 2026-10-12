@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Modules\Roles\Http\Controllers;
+namespace Modules\Role\Http\Controllers;
 
 use Inertia\Inertia;
 use Inertia\Response;
-use Modules\Roles\Services\PermissionService;
+use Modules\Role\Services\PermissionService;
 
 final readonly class PermissionController
 {
