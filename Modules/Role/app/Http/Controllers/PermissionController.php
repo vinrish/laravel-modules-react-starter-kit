@@ -19,7 +19,7 @@ final readonly class PermissionController
      */
     public function index(): Response
     {
-        return Inertia::render('roles/permissions/index', [
+        return Inertia::render('Role/Permissions/Index', [
             'permissions' => $this->permissionService->getAllPermissions(),
         ]);
     }

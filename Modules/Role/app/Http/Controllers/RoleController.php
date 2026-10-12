@@ -29,7 +29,7 @@ final readonly class RoleController
      */
     public function index(): Response
     {
-        return Inertia::render('roles/index', [
+        return Inertia::render('Role/Index', [
             'roles' => $this->roleService->getAllRolesWithPermissions(),
             'permissions' => $this->permissionService->getAllPermissions(),
         ]);
@@ -40,7 +40,7 @@ final readonly class RoleController
      */
     public function create(): Response
     {
-        return Inertia::render('roles/create', [
+        return Inertia::render('Role/Create', [
             'permissions' => $this->permissionService->getAllPermissions(),
         ]);
     }
@@ -65,7 +65,7 @@ final readonly class RoleController
     {
         $role->load(['permissions', 'users']);
 
-        return Inertia::render('roles/show', [
+        return Inertia::render('Role/Show', [
             'role' => $role,
         ]);
     }
@@ -77,7 +77,7 @@ final readonly class RoleController
     {
         $role->load('permissions');
 
-        return Inertia::render('roles/edit', [
+        return Inertia::render('Role/Edit', [
             'role' => $role,
             'permissions' => $this->permissionService->getAllPermissions(),
         ]);

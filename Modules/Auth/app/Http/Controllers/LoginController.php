@@ -10,7 +10,7 @@ use Inertia\Response;
 use Modules\Auth\Actions\LoginAction;
 use Modules\Auth\DataTransferObjects\LoginData;
 use Modules\Auth\Http\Requests\LoginRequest;
-use Modules\Roles\Enums\RoleName;
+use Modules\Role\Enums\RoleName;
 
 final readonly class LoginController
 {
