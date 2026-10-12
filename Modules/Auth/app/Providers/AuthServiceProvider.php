@@ -4,7 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Auth\Providers;
 
+use Illuminate\Routing\Router;
 use Nwidart\Modules\Support\ModuleServiceProvider;
+use Spatie\Permission\Middleware\PermissionMiddleware;
+use Spatie\Permission\Middleware\RoleMiddleware;
+use Spatie\Permission\Middleware\RoleOrPermissionMiddleware;
 
 final class AuthServiceProvider extends ModuleServiceProvider
 {
@@ -36,12 +40,25 @@ final class AuthServiceProvider extends ModuleServiceProvider
     ];
 
     /**
-     * Define module schedules.
-     *
-     * @param  $schedule
+     * Boot the module service provider.
      */
-    // protected function configureSchedules(Schedule $schedule): void
-    // {
-    //     $schedule->command('inspire')->hourly();
-    // }
+    public function boot(): void
+    {
+        parent::boot();
+
+        $this->registerMiddlewareAliases();
+    }
+
+    /**
+     * Register the spatie role/permission middleware aliases.
+     */
+    private function registerMiddlewareAliases(): void
+    {
+        /** @var Router $router */
+        $router = $this->app->make(Router::class);
+
+        $router->aliasMiddleware('role', RoleMiddleware::class);
+        $router->aliasMiddleware('permission', PermissionMiddleware::class);
+        $router->aliasMiddleware('role_or_permission', RoleOrPermissionMiddleware::class);
+    }
 }

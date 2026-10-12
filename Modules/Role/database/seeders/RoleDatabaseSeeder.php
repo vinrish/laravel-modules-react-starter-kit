@@ -3,6 +3,7 @@
 namespace Modules\Role\Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Modules\Roles\Database\Seeders\RolesAndPermissionsSeeder;
 
 class RoleDatabaseSeeder extends Seeder
 {
@@ -11,6 +12,8 @@ class RoleDatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // $this->call([]);
+         $this->call([
+             RolesAndPermissionsSeeder::class,
+         ]);
     }
 }
