@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Modules\Auth\Models\User;
-use Modules\Roles\Enums\RoleName;
+use Modules\Role\Enums\RoleName;
 
 /**
  * @extends Factory<User>

@@ -10,7 +10,7 @@ it('renders the login page', function (): void {
 
     $this->get(route('login'))
         ->assertOk()
-        ->assertInertia(fn (AssertableInertia $page): AssertableInertia => $page->component('auth/login', false));
+        ->assertInertia(fn (AssertableInertia $page): AssertableInertia => $page->component('Auth/Login', false));
 });
 
 it('authenticates a user with valid credentials', function (): void {

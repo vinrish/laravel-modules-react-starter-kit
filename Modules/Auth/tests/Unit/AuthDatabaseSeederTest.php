@@ -7,7 +7,7 @@ namespace Modules\Auth\Tests\Unit;
 use Illuminate\Support\Facades\Hash;
 use Modules\Auth\Database\Seeders\AuthDatabaseSeeder;
 use Modules\Auth\Models\User;
-use Modules\Roles\Enums\RoleName;
+use Modules\Role\Enums\RoleName;
 
 it('seeds default users with their respective roles', function (): void {
     $this->seed(AuthDatabaseSeeder::class);

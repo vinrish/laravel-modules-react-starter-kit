@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 use Modules\Auth\Models\User;
-use Modules\Roles\Database\Seeders\RolesAndPermissionsSeeder;
-use Modules\Roles\Enums\RoleName;
+use Modules\Role\Database\Seeders\RolesAndPermissionsSeeder;
+use Modules\Role\Enums\RoleName;
 
 beforeEach(function (): void {
     $this->seed(RolesAndPermissionsSeeder::class);

@@ -14,7 +14,8 @@
         "laravel/framework": "^13.35",
         "laravel/tinker": "^3.0.2",
         "laravel/wayfinder": "^0.1.21",
-        "nwidart/laravel-modules": "^13.0"
+        "nwidart/laravel-modules": "^13.0",
+        "spatie/laravel-permission": "^8.3"
     },
     "require-dev": {
         "driftingly/rector-laravel": "^2.6.2",
@@ -42,7 +43,8 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
-            "Modules\\Auth\\": "Modules/Auth/app/"
+            "Modules\\Auth\\": "Modules/Auth/app/",
+            "Modules\\Role\\": "Modules/Role/app/"
         }
     },
     "autoload-dev": {

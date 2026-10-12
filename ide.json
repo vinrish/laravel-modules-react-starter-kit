@@ -9,6 +9,10 @@
                 {
                     "path": "/Modules/Auth/resources/js/Pages",
                     "prefix": "Auth/"
+                },
+                {
+                    "path": "/Modules/Role/resources/js/Pages",
+                    "prefix": "Role/"
                 }
             ]
         }

@@ -7,6 +7,8 @@ namespace Modules\Auth\Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 use Modules\Auth\Models\User;
+use Modules\Role\Database\Seeders\RolesAndPermissionsSeeder;
+use Modules\Role\Enums\RoleName;
 
 final class AuthDatabaseSeeder extends Seeder
 {
@@ -15,30 +17,30 @@ final class AuthDatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        //        $this->call([
-        //            RolesAndPermissionsSeeder::class,
-        //        ]);
+        $this->call([
+            RolesAndPermissionsSeeder::class,
+        ]);
 
         $defaultUsers = [
             [
                 'name' => 'Admin User',
                 'email' => 'admin@school.test',
-                //                'role' => RoleName::Admin->value,
+                'role' => RoleName::Admin->value,
             ],
             [
                 'name' => 'Teacher User',
                 'email' => 'teacher@school.test',
-                //                'role' => RoleName::Teacher->value,
+                'role' => RoleName::Teacher->value,
             ],
             [
                 'name' => 'Student User',
                 'email' => 'student@school.test',
-                //                'role' => RoleName::Student->value,
+                'role' => RoleName::Student->value,
             ],
             [
                 'name' => 'Parent User',
                 'email' => 'parent@school.test',
-                //                'role' => RoleName::Parent->value,
+                'role' => RoleName::Parent->value,
             ],
         ];
 
