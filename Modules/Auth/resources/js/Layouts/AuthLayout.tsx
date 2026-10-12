@@ -26,7 +26,7 @@ export default function AuthLayout({
                             />
                         </svg>
                         <span className="text-xl font-bold tracking-tight">
-                            School LMS
+                            Vtech Modules Starter Kit
                         </span>
                     </Link>
                     {title && (
