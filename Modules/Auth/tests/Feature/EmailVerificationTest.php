@@ -16,7 +16,7 @@ it('renders the email verification prompt for unverified users', function (): vo
     $this->actingAs($user)
         ->get(route('verification.notice'))
         ->assertOk()
-        ->assertInertia(fn (AssertableInertia $page): AssertableInertia => $page->component('auth/verify-email', false));
+        ->assertInertia(fn (AssertableInertia $page): AssertableInertia => $page->component('Auth/VerifyEmail', false));
 });
 
 it('verifies the email with a valid signed url', function (): void {

@@ -14,7 +14,7 @@ it('renders the forgot password page', function (): void {
 
     $this->get(route('password.request'))
         ->assertOk()
-        ->assertInertia(fn (AssertableInertia $page): AssertableInertia => $page->component('auth/forgot-password', false));
+        ->assertInertia(fn (AssertableInertia $page): AssertableInertia => $page->component('Auth/Forgot-Password', false));
 });
 
 it('sends a password reset link to a known user', function (): void {

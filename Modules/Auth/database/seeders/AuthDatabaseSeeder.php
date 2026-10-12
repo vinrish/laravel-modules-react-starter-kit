@@ -17,9 +17,9 @@ final class AuthDatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-//        $this->call([
-//            RolesAndPermissionsSeeder::class,
-//        ]);
+        $this->call([
+            RolesAndPermissionsSeeder::class,
+        ]);
 
         $defaultUsers = [
             [

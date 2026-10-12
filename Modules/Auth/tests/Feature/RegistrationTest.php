@@ -6,8 +6,8 @@ use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Facades\Event;
 use Inertia\Testing\AssertableInertia;
 use Modules\Auth\Models\User;
-use Modules\Roles\Database\Seeders\RolesAndPermissionsSeeder;
-use Modules\Roles\Enums\RoleName;
+use Modules\Role\Database\Seeders\RolesAndPermissionsSeeder;
+use Modules\Role\Enums\RoleName;
 
 beforeEach(function (): void {
     $this->seed(RolesAndPermissionsSeeder::class);
@@ -18,7 +18,7 @@ it('renders the registration page', function (): void {
 
     $this->get(route('register'))
         ->assertOk()
-        ->assertInertia(fn (AssertableInertia $page): AssertableInertia => $page->component('auth/register', false));
+        ->assertInertia(fn (AssertableInertia $page): AssertableInertia => $page->component('Auth/Register', false));
 });
 
 it('registers a new user, assigns the default role and logs them in', function (): void {

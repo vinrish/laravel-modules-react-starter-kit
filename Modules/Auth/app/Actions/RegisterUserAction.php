@@ -7,7 +7,7 @@ namespace Modules\Auth\Actions;
 use Illuminate\Auth\Events\Registered;
 use Modules\Auth\DataTransferObjects\RegisterUserData;
 use Modules\Auth\Models\User;
-use Modules\Roles\Enums\RoleName;
+use Modules\Role\Enums\RoleName;
 
 final class RegisterUserAction
 {
