@@ -7,9 +7,9 @@
     <a href="https://packagist.org/packages/vinrish/laravel-modules-react-starter-kit"><img src="https://img.shields.io/packagist/l/vinrish/laravel-modules-react-starter-kit" alt="License"></a>
 </p>
 
-*A rigorously engineered, type-safe Laravel starter kit built for developers who demand uncompromising code quality, architectural consistency, and long-term maintainability*
+_A rigorously engineered, type-safe Laravel starter kit built for developers who demand uncompromising code quality, architectural consistency, and long-term maintainability_
 
-***Laravel Modules React Starter Kit (Inertia, React & nwidart/laravel-modules)***
+_**Laravel Modules React Starter Kit (Inertia, React & nwidart/laravel-modules)**_
 combines the power of [Laravel](https://laravel.com), [Nwidart/Laravel-Modules](https://laravelmodules.com/), this opinionated starter kit provides a robust foundation for building scalable, modular, and maintainable applications without sacrificing developer experience or engineering discipline.
 
 Designed around strict typing, immutability, explicit contracts, and fail-fast principles, it transforms best practices into enforceable standards through carefully configured tooling, consistent architectural patterns, and a development workflow built to catch problems early.
@@ -21,6 +21,7 @@ Whether you're building a complex enterprise platform or a modular SaaS applicat
 ### Not just a starter kit - a foundation for engineering software with precision, confidence, and zero tolerance for avoidable technical debt.
 
 ## Why This Starter Kit?
+
 - **Fully Actions-Oriented Architecture**: Every operation is encapsulated in a single-action class
 - **Cruddy by Design**: Standardized CRUD operations for all controllers, actions, and Inertia & React pages
 - **100% Type Coverage**: Every method, property, and parameter is explicitly typed
