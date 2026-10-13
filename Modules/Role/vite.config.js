@@ -17,7 +17,7 @@ export default defineConfig({
             buildDirectory: 'build-role',
             input: [
                 __dirname + '/resources/assets/sass/app.scss',
-                __dirname + '/resources/assets/js/app.js'
+                __dirname + '/resources/assets/js/app.js',
             ],
             refresh: true,
         }),

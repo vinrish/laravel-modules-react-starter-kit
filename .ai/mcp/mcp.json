@@ -1,11 +1,11 @@
 {
-  "mcpServers": {
-    "laravel-boost": {
-      "command": "C:\\Users\\MSI\\.config\\herd\\bin\\php84\\php.exe",
-      "args": [
-        "C:\\Users\\MSI\\Herd\\laravel-modules-react-starter-kit\\artisan",
-        "boost:mcp"
-      ]
+    "mcpServers": {
+        "laravel-boost": {
+            "command": "C:\\Users\\MSI\\.config\\herd\\bin\\php84\\php.exe",
+            "args": [
+                "C:\\Users\\MSI\\Herd\\laravel-modules-react-starter-kit\\artisan",
+                "boost:mcp"
+            ]
+        }
     }
-  }
 }
