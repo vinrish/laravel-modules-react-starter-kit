@@ -1,5 +1,12 @@
 ## Laravel Modules React Starter Kit (Inertia, React & nwidart/laravel-modules)
 
+<p>
+    <a href="https://github.com/vinrish/laravel-modules-react-starter-kit/actions"><img src="https://github.com/vinrish/laravel-modules-react-starter-kit/actions/workflows/tests.yml/badge.svg" alt="Build Status"></a>
+    <a href="https://packagist.org/packages/vinrish/laravel-modules-react-starter-kit"><img src="https://img.shields.io/packagist/dt/vinrish/laravel-modules-react-starter-kit" alt="Total Downloads"></a>
+    <a href="https://packagist.org/packages/vinrish/laravel-modules-react-starter-kit"><img src="https://img.shields.io/packagist/v/vinrish/laravel-modules-react-starter-kit" alt="Latest Stable Version"></a>
+    <a href="https://packagist.org/packages/vinrish/laravel-modules-react-starter-kit"><img src="https://img.shields.io/packagist/l/vinrish/laravel-modules-react-starter-kit" alt="License"></a>
+</p>
+
 *A rigorously engineered, type-safe Laravel starter kit built for developers who demand uncompromising code quality, architectural consistency, and long-term maintainability*
 
 ***Laravel Modules React Starter Kit (Inertia, React & nwidart/laravel-modules)***
