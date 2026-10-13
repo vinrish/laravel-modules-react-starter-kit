@@ -67,9 +67,11 @@
             "@php artisan dev"
         ],
         "lint": [
+            "rector",
             "pint --parallel"
         ],
         "lint:check": [
+            "rector --dry-run",
             "pint --parallel --test"
         ],
         "ci:check": [
@@ -81,6 +83,7 @@
         "types:check": [
             "phpstan analyse"
         ],
+        "test:unit": "XDEBUG_MODE=\"coverage\" pest --parallel --coverage --exactly=100.0",
         "test": [
             "@php artisan config:clear --ansi",
             "@lint:check",
