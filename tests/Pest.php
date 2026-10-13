@@ -27,6 +27,7 @@ pest()->extend(TestCase::class)
     ->in(
         __DIR__.'/../Modules/Auth/tests',
         __DIR__.'/../Modules/Role/tests',
+        __DIR__.'/../Modules/Admin/tests',
     );
 
 pest()->tia()->defaultBranch('master');
