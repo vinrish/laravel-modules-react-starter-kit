@@ -51,7 +51,7 @@ export default function AppSidebar() {
             items: [
                 {
                     title: 'Users',
-                    href: '/users',
+                    href: isAdmin ? '/admin/users' : '/users',
                     icon: Users,
                     isActive: url.startsWith('/users') || url.startsWith('/admin/users'),
                 },

@@ -16,3 +16,11 @@ Route::get('/', function (Request $request): Response|RedirectResponse {
 
     return Inertia::render('welcome');
 })->name('home');
+
+Route::middleware(['auth'])->get('/users', function (Request $request): RedirectResponse {
+    if ($request->user()?->hasRole(RoleName::Admin->value)) {
+        return to_route('admin.users.index');
+    }
+
+    return to_route('dashboard');
+})->name('users');
