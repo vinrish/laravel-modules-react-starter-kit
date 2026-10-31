@@ -27,7 +27,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@f3e473d116dcccaddc5834248c87452386958240 # v2
+        uses: shivammathur/setup-php@eb7c497e18156a6bbabfef1d3a82760b9eda3962 # v2
         with:
           php-version: '8.4'
           tools: composer:v2
@@ -35,13 +35,13 @@ jobs:
           ini-values: zend.assertions=1
 
       -   name: Setup pnpm
-          uses: pnpm/action-setup@v4
+          uses: pnpm/action-setup@v6
           with:
               version: 10
               run_install: false
 
       -   name: Setup Node.js
-          uses: actions/setup-node@v4
+          uses: actions/setup-node@v7
           with:
               node-version: 24
               cache: pnpm
